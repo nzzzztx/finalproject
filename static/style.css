@@ -1,39 +1,39 @@
 /* Navbar Styles */
 .navbar {
-    background-color: #d2b48c;
-    height: 95px;
-    box-shadow: 0px 0px 10px #d2b48c;
-  }
-  
-  .navbar .navbar-brand {
-    font-size: 25px;
-    font-weight: bold;
-  }
-  
-  .navbar .navbar-nav {
-    float: left;
-    position: center;
-    top: 15px;
-    right: 20px;
-  }
-  
-  .navbar .navbar-nav li {
-    display: inline;
-    margin-right: 15px;
-  }
-  
-  .navbar .navbar-nav li a {
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 0px 4px 6px 4px;
-    text-transform: uppercase;
-    color: #ffffff;
-  }
-  
+  background-color: #d2b48c;
+  height: 95px;
+  box-shadow: 0px 0px 10px #d2b48c;
+}
+
+.navbar .navbar-brand {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.navbar .navbar-nav {
+  float: left;
+  position: center;
+  top: 15px;
+  right: 20px;
+}
+
+.navbar .navbar-nav li {
+  display: inline;
+  margin-right: 15px;
+}
+
+.navbar .navbar-nav li a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0px 4px 6px 4px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
 /* Hero Section Styles */
 #hero-container {
-  background: url('/static/bannerperpus.jpg') no-repeat center center fixed;
+  background: url("/static/bannerperpus.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -47,7 +47,7 @@
 }
 
 .hero-text h1 {
-  font-family: sans-serif; 
+  font-family: sans-serif;
   font-size: 3.5rem;
   color: white;
   margin-bottom: 10px;
@@ -59,90 +59,207 @@
   color: white;
 }
 
-  
-  .hero-wrapper {
-    width: 80%;
-    max-width: 600px;
-    color: #555;
-    text-align: center;
-    padding: 20px;
-  }
-  
-  .hero-wrapper h1 {
-    font-family: 'Pacifico', cursive;
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-  }
-  
-  .hero-wrapper p {
-    font-size: 1.25rem;
-    margin-bottom: 20px;
-  }
-  
-  .btn-wrapper {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .btn-wrapper a {
-    text-decoration: none;
-    color: #fff;
-    background-color: #e76f51;
-    padding: 10px 20px;
-    margin: 0 10px;
-    border-radius: 5px;
-    font-weight: bold;
-  }
-  
-  .btn-wrapper a:hover {
-    background-color: #c25b41;
-  }
-  
-  /* About Section Styles */
-  #about {
-    position: relative;
-  }
-  
-  .about-content {
-    text-align: left;
-    padding: 20px;
-    margin-top: 20px;
-  }
-  
-  .about-heading {
-    font-family: 'Pacifico', cursive;
-    font-size: 2.5rem;
-    color: #e76f51;
-    margin-bottom: 10px;
-  }
-  
-  .about-text {
-    font-size: 1.125rem;
-    color: #555;
-    margin-bottom: 20px;
-  }
-  
-  .profile-img {
-    width: 75%;
-    border-radius: 50%;
-    transition: transform 0.3s ease;
-  }
-  
-  .profile-img:hover {
-    transform: scale(1.1);
-  }
-  
-  .about-content .btn-primary:hover {
-    background-color: #c25b41;
-  }
+.hero-wrapper {
+  width: 80%;
+  max-width: 600px;
+  color: #555;
+  text-align: center;
+  padding: 20px;
+}
 
-  /* Footer Styles */
-  footer {
-    background-color: #e76f51;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-  }
-  
+.hero-wrapper h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
 
-  
+.hero-wrapper p {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-wrapper a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #e76f51;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.btn-wrapper a:hover {
+  background-color: #c25b41;
+}
+
+/* About Section Styles */
+#about {
+  position: relative;
+}
+
+.about-content {
+  text-align: left;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.about-heading {
+  font-family: "Pacifico", cursive;
+  font-size: 2.5rem;
+  color: #e76f51;
+  margin-bottom: 10px;
+}
+
+.about-text {
+  font-size: 1.125rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.profile-img {
+  width: 75%;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.1);
+}
+
+.about-content .btn-primary:hover {
+  background-color: #c25b41;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #e76f51;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+#containerbuku {
+  width: 400px;
+  margin-top: 25px;
+  height: 600px;
+  background-color: white;
+  box-shadow: 0px 5px 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+#mycontainerkanan {
+  width: 300px;
+  margin-top: 25px;
+  height: 600px;
+  background-color: white;
+  box-shadow: 0px 5px 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  background-color: #a86a14;
+}
+
+#mycontainerkananedit {
+  width: 300px;
+  margin-top: 25px;
+  height: 500px;
+  background-color: white;
+  box-shadow: 0px 5px 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  background-color: #a86a14;
+}
+
+.myjudulbuku {
+  text-align: center;
+  color: white;
+}
+
+#empatcontainerkanan {
+  width: 270px;
+  height: 40px;
+  background-color: white;
+  box-shadow: 0px 5px 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+#empatcontainerkananspesial {
+  width: 270px;
+  height: 300px;
+  background-color: white;
+  box-shadow: 0px 5px 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.belibukubtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 200px;
+  height: 68px;
+  color: white;
+  background-color: #a86a14;
+  border-radius: 20px;
+  font-size: 25px;
+}
+
+.editbukubtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 200px;
+  height: 55px;
+  color: white;
+  background-color: #a86a14;
+  border-radius: 20px;
+  font-size: 25px;
+}
+
+#belitambahedit {
+  color: white;
+}
+
+.containersearch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 80%; /* Menggunakan persentase untuk lebar agar responsif */
+  max-width: 600px; /* Batasi lebar maksimum */
+  height: 100px;
+  color: white;
+  border-radius: 20px;
+  font-size: 25px;
+}
+
+@media (max-width: 768px) {
+  /* Mengubah styling pada layar dengan lebar maksimum 768px */
+  .containersearch {
+    width: 90%; /* Mengurangi lebar untuk layar yang lebih kecil */
+  }
+}
+
+#hargabuku {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 40px;
+  width: 300px;
+  height: 50px;
+  color: black;
+  background-color: white;
+  border-radius: 20px;
+  font-size: 25px;
+}
