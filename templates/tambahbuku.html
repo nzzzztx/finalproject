@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <title>Edit Buku | LibraryKu</title>
+    <link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+<body style="background-color: #261c0e;">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #261c0e;">
+        <div class="container">
+            <!-- Add your logo here -->
+            <a class="navbar-brand mr-auto" href="#"><img src="/static/logolibraryku.png" alt="Logo"
+                    style="max-height: 80px;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="koleksi.html">Daftar Buku</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Keranjang">Keranjang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kontak">Kontak</a>
+                    </li>
+                </ul>
+                <a class="btn btn-outline-light px-4 ml-auto" href="index.html">Logout</a>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar -->
+
+    <!-- teks tengah -->
+    <div class="p-5 text-center">
+        <span class="h2 fw-bold mb-0" id="belitambahedit">
+            Tambah Buku
+        </span>
+    </div>
+    <div class="containersearch">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Pencarian buku" aria-label="Pencarian buku"
+                aria-describedby="basic-addon1">
+            <button type="button" class="btn btn-warning">Search</button>
+        </div>
+
+    </div>
+
+    <!-- teks tengah -->
+    <!-- kolom kiri -->
+    <div class="d-flex flex-row justify-content-center mb-3">
+        <div class="p-2 ms-5" id="containerbuku"></div>
+
+        <!-- kolom kiri -->
+        <!-- kolom kanan -->
+        <div class="p-2 ms-5 me-5" id="mycontainerkananedit">
+            <h3 class="myjudulbuku">Judul Buku</h3>
+            <div class="d-flex flex-column mb-3">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Penulis" aria-label="Penulis"
+                        aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Tahun terbit" aria-label="Tahun terbit"
+                        aria-describedby="basic-addon1">
+                </div>
+                <div class="input-group mb-3">
+                    <textarea class="form-control" placeholder="Keterangan" aria-label="Keterangan"></textarea>
+                </div>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Harga" aria-label="Harga"
+                        aria-describedby="basic-addon1">
+                </div>
+
+            </div>
+            <div class="d-flex justify-content-evenly mt-5">
+                <button class="editbukubtn"> Save</button>
+            </div>
+
+        </div>
+    </div>
+    <!-- kolom kanan -->
+
+
+
+    <!-- footer -->
+    <footer class="py-4 mt-5" style="background-color: #e76f51;">
+        <p class="text-center text-light">
+            &copy; 2023, Hak Cipta Dilindungi LibraryKu
+        </p>
+    </footer>
+    <!-- footer -->
+
+
+</body>
+
+</html>
