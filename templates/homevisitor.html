@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LibraryKu | Perpustakaan Online</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="static/style.css" />
+</head>
+
+<body style="background-color: #261c0e;">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #261c0e;">
+        <div class="container">
+            <!-- Add your logo here -->
+            <a class="navbar-brand mr-auto" href="#"><img src="/static/logolibraryku.png" alt="Logo"
+                    style="max-height: 80px;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="koleksi.html">Daftar Buku</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Keranjang">Keranjang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kontak">Kontak</a>
+                    </li>
+                </ul>
+                <a class="btn btn-outline-light px-4 ml-auto" href="index.html">Logout</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Jumbotron -->
+    <div class="bg-light text-dark" id="hero-container">
+        <div class="container">
+            <div class="text-center hero-text">
+                <h1>Selamat Datang di LibraryKu</h1>
+                <h4>Beli Buku Mudah Secara Online</h4>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="bg-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="/static/ilustrasi.jpg" alt="Illustration" class="img-fluid profile-img">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="about-heading">About LibraryKu</h2>
+                    <p class="about-text">
+                        <strong>LibraryKu</strong> adalah layanan perpustakaan umum berbasis offline dan online yang
+                        dapat
+                        diakses oleh siapapun dan dimanapun dengan fleksibel. PrnndkLibrary memberikan kemudahan bagi
+                        pengguna
+                        untuk melakukan proses peminjaman dan pengembalian buku. PrnndkLibrary menyediakan berbagai
+                        jenis buku
+                        secara
+                        gratis. Kemudahan dalam PrnndkLibrary diberikan kepada pengguna untuk mendukung peningkatan
+                        minat baca
+                        pengguna.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Book Reviews Section -->
+    <div class="container mt-4" id="bookReviews">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="text-center">Ulasan Buku</h2>
+                <p class="text-center">
+                    Berikan ulasan Anda tentang buku yang telah Anda baca.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Book Review Cards -->
+            <div class="col-md-4 my-3">
+                <div class="card">
+                    <img src="https://via.placeholder.com/100" class="card-img-top" alt="Book Cover">
+                    <div class="card-body">
+                        <h5 class="card-title">Judul Buku</h5>
+                        <p class="card-text">Ulasan singkat tentang buku yang telah dibeli.</p>
+                        <p class="card-text"><small class="text-muted">Pembelian tanggal: 01 Januari 2023</small></p>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more book review cards as needed -->
+
+            <!-- Comment Form Section -->
+            <div class="col-md-12 my-3 text-center">
+                <div class="card rounded-3 w-75 p-3 mx-auto border-0" style="background-color: #f0f0f0;">
+                    <div class="card-body">
+                        <h5 class="mt-2">Tambah Komentar</h5>
+                        <div class="form my-4">
+                            <form action="POST">
+                                <div class="mb-3">
+                                    <label for="fullNameComment" class="form-label">Nama Lengkap</label>
+                                    <input type="text" class="form-control" id="fullNameComment" />
+                                </div>
+                                <div class="mb-3">
+                                    <label for="emailComment" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="emailComment"
+                                        placeholder="name@gmail.com" />
+                                </div>
+                                <div class="mb-3">
+                                    <label for="comment" class="form-label">Komentar</label>
+                                    <textarea class="form-control" id="comment" rows="3"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-secondary w-100">
+                                    Kirim Komentar
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Hubungi Kami Section -->
+            <section id="about" class="bg-white py-5">
+                <div class="container mt-4" id="kontak">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2 class="text-center">Contact Us</h2>
+                            <p class="text-center">
+                                If you have any questions, feel free to reach out to us!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-lg-4 col-md-6">
+                            <img src="/static/logolibraryku.png" class="img-fluid" alt="" />
+                        </div>
+                        <div class="col-lg-4 col-md-6 offset-lg-1 mt-3">
+                            <div class="alert alert-warning alert-dismissible fade show d-none my-alert" role="alert">
+                                <strong>Thank you!</strong> Your message has been received.
+                                <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                    aria-label="Close"></button>
+                            </div>
+                            <form name="libraryku-contact-form">
+                                <div class="mb-3">
+                                    <label for="fullName" class="form-label">Nama Lengkap</label>
+                                    <input type="text" class="form-control" id="fullName" />
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Alamat Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="name@gmail.com" />
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlTextarea1" class="form-label">Pesan</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                                <button type="submit" class="btn text-black btn-kirim"
+                                    style="background-color: #ffeab1">
+                                    Send
+                                </button>
+                                <button class="btn text-black btn-loading d-none" type="button"
+                                    style="background-color: #ffeab1" disabled>
+                                    <span class="spinner-border spinner-border-sm" role="status"
+                                        aria-hidden="true"></span>
+                                    Loading...
+                                </button>
+                            </form>
+                        </div>
+                        <div class="col-lg-2 offset-lg-1 col-md-12 text-center mt-3">
+                            <h5>Contact</h5>
+                            <p style="font-size: small">LibraryKu@gmail.com</p>
+                            <br />
+                            <h5>Based in</h5>
+                            <p style="font-size: small">Indonesia</p>
+                            <br />
+                            <h4>
+                                <a class="btn-font-size: 10px me-3" href="https://www.instagram.com/" role="button"
+                                    style="color: #fff">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                                <a class="btn-font-size: 10px me-3" href="https://www.instagram.com/" role="button"
+                                    style="color: #fff">
+                                    <i class="bi bi-whatsapp"></i>
+                                </a>
+                                <a class="btn-font-size: 10px" href="https://www.instagram.com/" role="button"
+                                    style="color: #fff">
+                                    <i class="bi bi-twitter"></i>
+                                </a>
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Akhir Hubungi Kami Section -->
+
+            <!-- footer area -->
+            <footer class="py-4 mt-5" style="background-color: #e76f51;">
+                <p class="text-center text-light">
+                    &copy; 2023, Hak Cipta Dilindungi LibraryKu
+                </p>
+            </footer>
+            <!-- End Footer Area -->
+            <!-- JavaScript by bootstrap -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+                crossorigin="anonymous">
+            </script>
+</body>
+
+</html>
