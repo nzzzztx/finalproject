@@ -1,0 +1,71 @@
+/* Navbar Styles */
+.navbar {
+    background-color: #d2b48c;
+    height: 95px;
+    box-shadow: 0px 0px 10px #d2b48c;
+  }
+  
+  .navbar .navbar-brand {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  .navbar .navbar-nav {
+    float: left;
+    position: center;
+    top: 15px;
+    right: 20px;
+  }
+  
+  .navbar .navbar-nav li {
+    display: inline;
+    margin-right: 15px;
+  }
+  
+  .navbar .navbar-nav li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0px 4px 6px 4px;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+/* List Styles */
+.table {
+    margin-top: 20px;
+
+}
+
+.table th, .table td {
+    text-align: center;
+    color: black;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #261c0e;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .links a:hover {
+    color: black;
+}
+
+footer .links {
+    margin-bottom: 40px;
+}
+
+footer .links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 13px;
+    font-weight: 800;
+}
+
+footer .credit p {
+    color: #fff;
+    margin: 0;
+}
