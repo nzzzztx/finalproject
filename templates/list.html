@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LibraryKu | Perpustakaan Online</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="static/list.css" />
+</head>
+
+<body style="background-color: #564732;">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #261c0e;">
+        <div class="container">
+            <!-- Add your logo here -->
+            <a class="navbar-brand mr-auto" href="#"><img src="/static/logolibraryku.png" alt="Logo"
+                    style="max-height: 80px;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#homevisitor.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#daftarbuku.html">Daftar Buku</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#keranjang.html">Keranjang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kontak">Kontak</a>
+                    </li>
+                </ul>
+                <a class="btn btn-outline-light px-4 ml-auto" href="index.html">Logout</a>
+            </div>
+        </div>
+    </nav>
+
+<!-- Main Content -->
+<section class="container mt-5" style="background-color: #a86a14; padding: 20px; border-radius: 20px;">
+
+    <h2 class="text-white mb-4">Daftar Pembelian Buku</h2>
+
+    <!-- List Pembelian Buku -->
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped table-light">
+                    <thead>
+                        <tr>
+                            <th>Judul Buku</th>
+                            <th>Harga</th>
+                            <th>Tanggal Pembelian</th>
+                            <th>Nama Pembeli</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Tempatkan data pembelian buku di sini -->
+                        <tr>
+                            <td>Contoh Judul Buku</td>
+                            <td>Rp. 100.000</td>
+                            <td>2023-12-11</td>
+                            <td>John Doe</td>
+                        </tr>
+                        <!-- Gantilah data di atas dengan data sebenarnya -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<!-- Footer -->
+<footer class="text-center mt-5 text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 links">
+                <a href="#home">Home</a>
+                <a href="#categories">Daftar Buku</a>
+                <a href="#products">Keranjang</a>
+                <a href="#our-team">Kontak</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 credit">
+                <p>&copy; 2023 LibraryKu | Created By Kelompok 6</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End Footer -->
+>
+    <!-- JavaScript by bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+    </script>
+</body>
