@@ -1,223 +1,320 @@
 /* Navbar Styles */
 .navbar {
-    background-color: #d2b48c;
-    height: 95px;
-    box-shadow: 0px 0px 10px #d2b48c;
-  }
-  
-  .navbar .navbar-brand {
-    font-size: 25px;
-    font-weight: bold;
-  }
-  
-  .navbar .navbar-nav {
-    float: left;
-    position: center;
-    top: 15px;
-    right: 20px;
-  }
-  
-  .navbar .navbar-nav li {
-    display: inline;
-    margin-right: 15px;
-  }
-  
-  .navbar .navbar-nav li a {
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 0px 4px 6px 4px;
-    text-transform: uppercase;
-    color: #ffffff;
-  }
-  
-  /* Hero Section Styles */
-  #hero-container {
-    background: url("/static/bannerperpus.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 90vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    position: relative;
-  }
-  
-  .hero-text h1 {
-    font-family: sans-serif;
-    font-size: 3.5rem;
-    color: white;
-    margin-bottom: 10px;
-  }
-  
-  .hero-text h4 {
-    font-size: 1.25rem;
-    margin-bottom: 20px;
-    color: white;
-  }
-  
-  .hero-wrapper {
-    width: 80%;
-    max-width: 600px;
-    color: #555;
-    text-align: center;
-    padding: 20px;
-  }
-  
-  .hero-wrapper h1 {
-    font-family: "Pacifico", cursive;
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-  }
-  
-  .hero-wrapper p {
-    font-size: 1.25rem;
-    margin-bottom: 20px;
-  }
-  
-  .btn-wrapper {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .btn-wrapper a {
-    text-decoration: none;
-    color: #fff;
-    background-color: #e76f51;
-    padding: 10px 20px;
-    margin: 0 10px;
-    border-radius: 5px;
-    font-weight: bold;
-  }
-  
-  .btn-wrapper a:hover {
-    background-color: #c25b41;
-  }
-  
-  /* About Section Styles */
-  #about {
-    position: relative;
-  }
-  
-  .about-content {
-    text-align: left;
-    padding: 20px;
-    margin-top: 20px;
-  }
-  
-  .about-heading {
-    font-family: "Pacifico", cursive;
-    font-size: 2.5rem;
-    color: #e76f51;
-    margin-bottom: 10px;
-  }
-  
-  .about-text {
-    font-size: 1.125rem;
-    color: #555;
-    margin-bottom: 20px;
-  }
-  
-  .profile-img {
-    width: 75%;
-    border-radius: 50%;
-    transition: transform 0.3s ease;
-  }
-  
-  .profile-img:hover {
-    transform: scale(1.1);
-  }
-  
-  .about-content .btn-primary:hover {
-    background-color: #c25b41;
-  }
-  
-  /* Ulasan Styles */
+  background-color: #261c0e;
+  height: 95px;
+  box-shadow: 0px 0px 10px #d2b48c;
+}
+
+.navbar .navbar-brand {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.navbar .navbar-nav {
+  float: left;
+  position: center;
+  top: 15px;
+  right: 20px;
+}
+
+.navbar .navbar-nav li {
+  display: inline;
+  margin-right: 15px;
+}
+
+.navbar .navbar-nav li a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0px 4px 6px 4px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+/* Hero Section Styles */
+#hero-container {
+  background: url("/static/bannerperpus.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.hero-text h1 {
+  font-family: sans-serif;
+  font-size: 3.5rem;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.hero-text h4 {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.hero-wrapper {
+  width: 80%;
+  max-width: 600px;
+  color: #555;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-wrapper h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero-wrapper p {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-wrapper a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #e76f51;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.btn-wrapper a:hover {
+  background-color: #c25b41;
+}
+
+/* About Section Styles */
+#about {
+  position: relative;
+  background-color: #c0a080;
+  /* Ganti dengan warna earthtone yang Anda inginkan */
+}
+
+.about-content {
+  text-align: left;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.about-heading {
+  font-family: "Pacifico", cursive;
+  font-size: 2.5rem;
+  color: #e76f51;
+  margin-bottom: 10px;
+}
+
+.about-text {
+  font-size: 1.125rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.profile-img {
+  width: 75%;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.1);
+}
+
+.about-content .btn-primary:hover {
+  background-color: #c25b41;
+}
+
+/* Ulasan Section Styles */
 #ulasan {
-    padding-top: 40px; /* Atur jarak dari bagian atas */
-    padding-bottom: 40px; /* Atur jarak dari bagian bawah */
+  background-color: #825c5c;
+  /* Ganti warna latar belakang ke abu-abu */
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .card {
-    margin-bottom: 20px; /* Atur jarak antar kartu ulasan */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
 }
 
 .card-body {
-    padding: 20px; /* Atur jarak dalam kartu ulasan */
+  padding: 20px;
 }
 
-  
-  /* Tambahkan Gaya untuk Formulir Komentar */
-  .comment-form {
-    max-width: 600px;
-    margin: auto;
-    background-color: #f8f9fa;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 20px; /* Tambahkan margin atas */
-    margin-bottom: 20px; /* Tambahkan margin bawah */
-  }
-  .comentar{
-    margin-top: 20px;
-  }
-  .comment-label {
-    color: #fff; 
-  }
-  .comment-form label {
-    font-weight: bold;
-  }
-  
-  .comment-form input,
-  .comment-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ced4da;
-    border-radius: 5px;
-  }
-  
-  .comment-form button {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .comment-form button:hover {
-    background-color: #0056b3;
+.card-title {
+  color: #e76f51;
+  font-weight: bold;
+}
+
+.card-text {
+  color: #555;
+}
+
+/* Tambahkan Gaya untuk Formulir Komentar */
+.comment-form {
+  max-width: 600px;
+  margin: auto;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  /* Tambahkan margin atas */
+  margin-bottom: 20px;
+  /* Tambahkan margin bawah */
+}
+
+.comentar {
+  margin-top: 20px;
+}
+
+.comment-label {
+  color: #fff;
+}
+
+.comment-form label {
+  font-weight: bold;
+}
+
+.comment-form input,
+.comment-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+}
+
+.comment-form button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.comment-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Styling for Contact Section */
+#kontak {
+  background-color: #261c0e;
+  padding: 60px 20px;
+  /* Tambahkan padding pada sisi kiri dan kanan */
+  color: #fff;
+  /* Ganti warna teks menjadi putih */
+  width: 100%;
+  /* Lebarkan elemen ke seluruh lebar layar */
+  border-radius: 10px;
+  /* Tambahkan border-radius untuk sudut yang lebih lembut */
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  /* Tambahkan shadow */
+}
+
+#kontak h2 {
+  font-size: 2.5rem;
+}
+
+#kontak p {
+  font-size: 1.25rem;
+}
+
+.alert {
+  margin-top: 20px;
+}
+
+.alert-warning {
+  background-color: #f8d7da;
+  color: #721c24;
+  border-color: #f5c6cb;
+}
+
+.form-control {
+  border-radius: 0;
+}
+
+.btn-kirim {
+  background-color: #261c0e;
+  color: #fff;
+}
+
+.btn-kirim:hover {
+  background-color: #1a130a;
+}
+
+.btn-loading {
+  background-color: #261c0e;
+  color: #fff;
+}
+
+/* Styling for Social Icons */
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+/* Responsive styles for Social Icons */
+@media (max-width: 768px) {
+  .social-icons {
+    text-align: center;
   }
 
-  
+  .social-icons a {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+
 /* Footer */
 footer {
-	background-color: #261c0e;
-	padding: 20px 0;
+  background-color: #261c0e;
+  padding: 20px 0;
 }
 
 footer .container .links a:hover {
-	color: black;
+  color: black;
 }
 
 footer .container .links {
-	margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 footer .container .links a {
-	color: #fff;
-	text-decoration: none;
-	padding: 10px 13px;
-	font-weight: 800;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 13px;
+  font-weight: 800;
 }
 
 footer .container .credit p {
-	color: #fff;
+  color: #fff;
 }
 
 /* End Footer */
