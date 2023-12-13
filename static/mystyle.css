@@ -1,0 +1,263 @@
+.navbar {
+  background-color: #d2b48c;
+  height: 95px;
+  box-shadow: 0px 0px 10px #d2b48c;
+}
+
+.navbar .navbar-brand {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.navbar .navbar-nav {
+  float: left;
+  position: center;
+  top: 15px;
+  right: 20px;
+}
+
+.navbar .navbar-nav li {
+  display: inline;
+  margin-right: 15px;
+}
+
+.navbar .navbar-nav li a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 0px 4px 6px 4px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+/* Responsif navbar start */
+@media (max-width: 767px) {
+  .navbar {
+    background-color: transparent;
+    height: auto;
+    box-shadow: none;
+  }
+
+  .navbar-toggler {
+    border: none;
+    background-color: #564732;
+  }
+
+  .navbar-toggler-icon {
+    background-color: #564732;
+  }
+
+  .navbar .navbar-nav {
+    float: none;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .navbar .navbar-nav li {
+    display: block;
+    margin: 0;
+  }
+
+  .navbar .navbar-nav li a {
+    padding: 10px;
+    background-color: #564732;
+    margin-bottom: 5px;
+    border-radius: 5px;
+  }
+}
+/* Responsif navbar end */
+
+.btn-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-wrapper a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #e76f51;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.btn-wrapper a:hover {
+  background-color: #c25b41;
+}
+
+footer {
+  background-color: #261c0e;
+  padding: 20px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0px 0px 10px #d2b48c;
+}
+
+footer .links a:hover {
+  color: black;
+}
+
+footer .links {
+  margin-bottom: 40px;
+}
+
+footer .links a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 13px;
+  font-weight: 800;
+}
+
+footer .credit p {
+  color: #fff;
+  margin: 0;
+}
+
+#containerbuku {
+  width: 400px;
+  margin-top: 25px;
+  height: 600px;
+  background-color: white;
+  box-shadow: 0px 5px 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  background-image: url("https://www.junkybooks.com/administrator/bookimages/636846257645e3.90685624.jpg"); /* Ganti 'url_gambar_anda.jpg' dengan path atau URL gambar Anda */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#containerbukuedited1 {
+  width: 400px;
+  margin-top: 25px;
+  height: 600px;
+  background-color: white;
+  box-shadow: 0px 5px 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  background-color: #a86a14;
+}
+
+#mycontainerkanan {
+  width: 300px;
+  margin-top: 25px;
+  height: 600px;
+  background-color: white;
+  box-shadow: 0px 5px 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  background-color: #a86a14;
+}
+
+#mycontainerkananedit {
+  width: 300px;
+  margin-top: 25px;
+  height: 500px;
+  background-color: white;
+  box-shadow: 0px 5px 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  background-color: #a86a14;
+}
+
+.myjudulbuku {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+#empatcontainerkanan {
+  width: 385px;
+  height: 40px;
+  background-color: white;
+  box-shadow: 0px 5px 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+#empatcontainerkananspesial {
+  width: 385px;
+  height: 300px;
+  background-color: white;
+  box-shadow: 0px 5px 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.belibukubtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 200px;
+  height: 68px;
+  color: white;
+  background-color: #a86a14;
+  border-radius: 20px;
+  font-size: 25px;
+  margin-bottom: 90px;
+}
+
+.editbukubtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 200px;
+  height: 55px;
+  color: white;
+  background-color: #a86a14;
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+#belitambahedit {
+  color: white;
+}
+
+.containersearch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 80%;
+  max-width: 600px;
+  height: 100px;
+  color: white;
+  border-radius: 20px;
+  font-size: 25px;
+}
+
+@media (max-width: 768px) {
+  .containersearch {
+    width: 90%;
+  }
+}
+
+#hargabuku {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 40px;
+  width: 300px;
+  height: 50px;
+  color: white;
+  background-color: #a86a14;
+  border-radius: 20px;
+  font-size: 25px;
+}
+
+#bukukiricover {
+  width: 400px;
+  height: 500px;
+  margin-top: 25px;
+}
+
+#buttondeletesaveupload {
+  margin-bottom: 90px;
+  margin-top: 40px;
+}
