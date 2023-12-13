@@ -10,11 +10,11 @@
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
     <title>Edit Buku | LibraryKu</title>
-    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/mystyle.css">
 
 </head>
 
-<body style="background-color: #261c0e;">
+<body style="background-color: #564732;">
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #261c0e;">
         <div class="container">
@@ -62,47 +62,57 @@
     </div>
 
     <!-- teks tengah -->
-    <!-- kolom kiri -->
-    <div class="d-flex flex-row justify-content-center mb-3">
-        <div class="p-2 ms-5" id="containerbuku"></div>
-
-        <!-- kolom kiri -->
-        <!-- kolom kanan -->
-        <div class="p-2 ms-5 me-5" id="mycontainerkananedit">
-            <h3 class="myjudulbuku">Judul Buku</h3>
-            <div class="d-flex flex-column mb-3">
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Penulis" aria-label="Penulis"
-                        aria-describedby="basic-addon1">
-                </div>
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Tahun terbit" aria-label="Tahun terbit"
-                        aria-describedby="basic-addon1">
-                </div>
-                <div class="input-group mb-3">
-                    <textarea class="form-control" placeholder="Keterangan" aria-label="Keterangan"></textarea>
-                </div>
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Harga" aria-label="Harga"
-                        aria-describedby="basic-addon1">
+    <div class="container text-center">
+        <div class="row align-items-start">
+            <div class="col-lg-6 col-md-6 col-sm-12 mt-4 mb-4">
+                <div class="d-flex justify-content-center">
+                    <div class="p-2" id="containerbuku"></div>
                 </div>
 
             </div>
-            <div class="d-flex justify-content-evenly mt-5">
+            <div class="col-lg-6 col-md-6 col-sm-12 mt-4 mb-4">
+                <div class="d-flex justify-content-center">
+                    <div class="p-2" id="containerbukuedited1">
+                        <h3 class="myjudulbuku">Judul Buku</h3>
+                        <div class="d-flex flex-column mb-3">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Penulis" aria-label="Penulis"
+                                    aria-describedby="basic-addon1">
+                            </div>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Tahun terbit"
+                                    aria-label="Tahun terbit" aria-describedby="basic-addon1">
+                            </div>
+                            <div class="mb-3">
+                                <textarea id="keterangan" class="form-control" style="height: 300px;"
+                                    placeholder="Keterangan"></textarea>
+                            </div>
+
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Harga" aria-label="Harga"
+                                    aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-evenly" id="buttondeletesaveupload">
+                <button class="editbukubtn"> Upload Cover</button>
                 <button class="editbukubtn"> Save</button>
             </div>
-
         </div>
     </div>
-    <!-- kolom kanan -->
 
 
 
     <!-- footer -->
-    <footer class="py-4 mt-5" style="background-color: #e76f51;">
-        <p class="text-center text-light">
-            &copy; 2023, Hak Cipta Dilindungi LibraryKu
-        </p>
+    <footer class="text-center mt-5 text-white">
+        <div class="row">
+            <div class="col-lg-12 credit">
+                <p>&copy; 2023 LibraryKu | Created By Kelompok 6</p>
+            </div>
+        </div>
     </footer>
     <!-- footer -->
 
