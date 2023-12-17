@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="../static/homevisitor.css" />
+    <script>
+        function sign_out() {
+            $.removeCookie('mytoken', { path: '/' });
+            alert('Signed out!');
+            window.location.href = "/login";
+        }
+    </script>
 
 </head>
 
@@ -37,7 +44,7 @@
                         <a class="nav-link" href="/homevisitor">Kontak</a>
                     </li>
                 </ul>
-                <a class="btn btn-outline-light px-4 ml-auto" href="/">Logout</a>
+                <a class="btn btn-outline-light px-4 ml-auto" href="/login" onclick="sign_out()">Logout</a>
             </div>
         </div>
     </nav>
@@ -235,7 +242,7 @@
     <!-- JavaScript by bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
-    </script>
+        </script>
 </body>
 
 </html>

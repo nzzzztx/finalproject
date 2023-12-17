@@ -11,7 +11,12 @@
         crossorigin="anonymous"></script>
     <title>Pembelian | LibraryKu</title>
     <link rel="stylesheet" href="../static/mystyle.css">
-
+    <script>
+        function geserpage() {
+            // Ganti URL "https://example.com" dengan URL yang diinginkan
+            window.location.href = "/keranjang";
+        }
+    </script>
 </head>
 
 <body style="background-color: #564732;">
@@ -95,7 +100,7 @@
     <!-- hargabuku -->
 
     <!-- button beli -->
-    <button class="belibukubtn"> Beli Buku</button>
+    <button class="belibukubtn" onclick="geserpage()"> Beli Buku</button>
 
     <!-- button beli -->
 
