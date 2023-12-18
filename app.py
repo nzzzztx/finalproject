@@ -14,6 +14,7 @@ from flask import (
     url_for,
 )
 import json
+from bson import ObjectId
 from werkzeug.utils import secure_filename
 
 
@@ -34,19 +35,9 @@ SECRET_KEY = "SPARTA"
 TOKEN_KEY = 'mytoken'
 
 
-@app.route('/daftaradmin')
-def daftaradmin():
-    return render_template('daftaradmin.html')
-
-
 @app.route('/daftarvisitor')
 def daftarvisitor():
     return render_template('daftarvisitor.html')
-
-
-@app.route('/editbuku')
-def editbuku():
-    return render_template('editbuku.html')
 
 
 @app.route('/homeadmin')
@@ -79,9 +70,9 @@ def register():
     return render_template('register.html')
 
 
-@app.route('/tambahbuku')
-def tambahbuku():
-    return render_template('tambahbuku.html')
+@app.route('/editbuku')
+def editbukumain():
+    return render_template('editbuku.html')
 
 
 @app.route("/")
@@ -196,6 +187,72 @@ def check_dup():
     username_receive = request.form['username_give']
     exists = bool(db.users.find_one({"username": username_receive}))
     return jsonify({'result': 'success', 'exists': exists})
+
+
+def get_all_products():
+    products_cursor = db.products.find()
+    products_list = list(products_cursor)
+    return products_list
+
+
+def get_product_details(product_id):
+    product = db.products.find_one({'_id': ObjectId(product_id)})
+    return product
+
+
+def add_product(name, price):
+    db.products.insert_one({'name': name, 'price': price})
+
+
+def update_product(product_id, name, price):
+    db.products.update_one({'_id': ObjectId(product_id)}, {
+                           '$set': {'name': name, 'price': float(price)}})
+
+
+def delete_product(product_id):
+    db.products.delete_one({'_id': ObjectId(product_id)})
+
+
+@app.route('/')
+def index():
+    products = get_all_products()
+    return render_template('index.html', products=products)
+
+
+@app.route('/add', methods=['GET', 'POST'])
+def add_product_page():
+    if request.method == 'POST':
+        name = request.form['name']
+        price = float(request.form['price'])
+        add_product(name, price)
+        return redirect(url_for('index'))
+    return render_template('add_product.html')
+
+
+@app.route('/edit/<string:product_id>', methods=['GET', 'POST'])
+def edit_product_page(product_id):
+    product = get_product_details(product_id)
+    if request.method == 'POST':
+        name = request.form['name']
+        price = float(request.form['price'])
+        update_product(product_id, name, price)
+        return redirect(url_for('index'))
+    return render_template('edit_product.html', product=product)
+
+
+@app.route('/delete/<string:product_id>')
+def delete_product_page(product_id):
+    delete_product(product_id)
+    return redirect(url_for('index'))
+
+
+@app.route('/get_product/<string:product_id>')
+def get_product(product_id):
+    product = get_product_details(product_id)
+    if product:
+        return jsonify(product)
+    else:
+        return jsonify({'error': 'Product not found'}), 404
 
 
 if __name__ == '__main__':
