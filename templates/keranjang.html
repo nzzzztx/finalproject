@@ -33,6 +33,11 @@
             // You can add your image upload logic here.
             // For example, using FormData and AJAX to send the image to the server.
         }
+
+        function geserpage() {
+            // Ganti URL "https://example.com" dengan URL yang diinginkan
+            window.location.href = "/listbuku";
+        }
     </script>
 </head>
 
@@ -73,18 +78,18 @@
         <div class="container" style="padding: 0px 120px; margin-top: 40px;">
             <div class="row list-keranjang d-flex justify-content-between">
                 <div class="col-3">
-                    <img src="https://www.junkybooks.com/administrator/bookimages/63fbaad851c3d7.77151146.jpg"
+                    <img src="https://www.junkybooks.com/administrator/bookimages/636846257645e3.90685624.jpg"
                         class="beli-buku" alt="Book Cover">
-                    <h5 class="judul pt-3">Automoto</h5>
+                    <h5 class="judul pt-3">HACKING</h5>
                     <p class="penulis" style="font-weight: bold;">Iqbal Koncet</p>
                 </div>
                 <div class="col-3" style="margin-left: 15px;">
                     <h5 style="font-weight: bold;">Pembayaran</h5>
                     <div class="kotak">
-                        <p style="color: white; height: 3px;">Jumlah Buku</p>
+                        <p style="color: white; height: 3px;">Jumlah Buku : 1</p>
                     </div>
                     <div class="kotak">
-                        <p style="color: white; height: 3px;">Tanggal Pembelian</p>
+                        <p style="color: white; height: 3px;">22 Desember 2023</p>
                     </div>
                     <!-- Button trigger modal -->
                     <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal"
@@ -128,9 +133,9 @@
                 <div class="col-5 d-flex flex-column justify-content-end">
                     <div class="justify-content-end align-bottom harga">
                         <div class="kotak-harga">
-                            <p style="color: white; height: 3px;">Harga</p>
+                            <p style="color: white; height: 3px;">RP. 85.000</p>
                         </div>
-                        <button type="button" class="btn btn-warning" style="border-radius: 10px;">Bayar</button>
+                        <button type="button" class="btn btn-warning" style="border-radius: 10px;" onclick="geserpage()">Bayar</button>
                     </div>
                 </div>
             </div>
@@ -141,15 +146,15 @@
                     <img src="https://www.junkybooks.com/administrator/bookimages/63fbaad851c3d7.77151146.jpg"
                         class="beli-buku" alt="Book Cover">
                     <h5 class="judul pt-3">Automoto</h5>
-                    <p class="penulis" style="font-weight: bold;">Iqbal Koncet</p>
+                    <p class="penulis" style="font-weight: bold;">Iqbal Awaludin</p>
                 </div>
                 <div class="col-3" style="margin-left: 15px;">
                     <h5 style="font-weight: bold;">Pembayaran</h5>
                     <div class="kotak">
-                        <p style="color: white; height: 3px;">Jumlah Buku</p>
+                        <p style="color: white; height: 3px;">Jumlah Buku : 2</p>
                     </div>
                     <div class="kotak">
-                        <p style="color: white; height: 3px;">Tanggal Pembelian</p>
+                        <p style="color: white; height: 3px;">24 Desember 2023</p>
                     </div>
                     <!-- Button trigger modal -->
                     <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal"
@@ -195,7 +200,7 @@
                         <div class="kotak-harga">
                             <p style="color: white; height: 3px;">Harga</p>
                         </div>
-                        <button type="button" class="btn btn-warning" style="border-radius: 10px;">Bayar</button>
+                        <button type="button" class="btn btn-warning" style="border-radius: 10px;" onclick="geserpage()">Bayar</button>
                     </div>
                 </div>
             </div>
