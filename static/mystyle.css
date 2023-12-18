@@ -261,3 +261,16 @@ footer .credit p {
   margin-bottom: 90px;
   margin-top: 40px;
 }
+
+.buttoneditbawah {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: auto;
+  width: 200px;
+  height: 55px;
+  color: white;
+  border-radius: 20px;
+  font-size: 20px;
+  margin-bottom: 120px;
+}
