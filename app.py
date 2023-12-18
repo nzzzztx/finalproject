@@ -40,6 +40,11 @@ def daftarvisitor():
     return render_template('daftarvisitor.html')
 
 
+@app.route('/daftaradmin')
+def daftaradmin():
+    return render_template('daftaradmin.html')
+
+
 @app.route('/homeadmin')
 def homeadmin():
     return render_template('homeadmin.html')
@@ -98,7 +103,7 @@ def home():
 @app.route("/login")
 def login():
     msg = request.args.get("msg")
-    return render_template("index.html", msg=msg)
+    return render_template("login.html", msg=msg)
 
 
 @app.route("/user/<username>")
@@ -188,11 +193,12 @@ def check_dup():
     exists = bool(db.users.find_one({"username": username_receive}))
     return jsonify({'result': 'success', 'exists': exists})
 
+# jinja
+
 
 def get_all_products():
-    products_cursor = db.products.find()
-    products_list = list(products_cursor)
-    return products_list
+    products = db.products.find()
+    return products
 
 
 def get_product_details(product_id):
@@ -213,10 +219,10 @@ def delete_product(product_id):
     db.products.delete_one({'_id': ObjectId(product_id)})
 
 
-@app.route('/')
+@app.route('/daftarbukuadmin')
 def index():
     products = get_all_products()
-    return render_template('index.html', products=products)
+    return render_template('daftaradmin.html', products=products)
 
 
 @app.route('/add', methods=['GET', 'POST'])
@@ -226,7 +232,7 @@ def add_product_page():
         price = float(request.form['price'])
         add_product(name, price)
         return redirect(url_for('index'))
-    return render_template('add_product.html')
+    return render_template('tambahbuku.html')
 
 
 @app.route('/edit/<string:product_id>', methods=['GET', 'POST'])
@@ -237,7 +243,7 @@ def edit_product_page(product_id):
         price = float(request.form['price'])
         update_product(product_id, name, price)
         return redirect(url_for('index'))
-    return render_template('edit_product.html', product=product)
+    return render_template('editbuku.html', product=product)
 
 
 @app.route('/delete/<string:product_id>')
