@@ -52,9 +52,26 @@ def homeadmin():
 
 @app.route('/homevisitor')
 def homevisitor():
-    return render_template('homevisitor.html')
+    try:
+        # Retrieve reviews from the database
+        reviews = list(db.reviews.find())
 
+        return render_template('homevisitor.html', reviews=reviews)
+    except Exception as e:
+        return render_template('homevisitor.html', error=str(e))
 
+@app.route('/add_review', methods=['POST'])
+def add_review():
+    try:
+        nama = request.form.get('nama')
+        ulasan = request.form.get('ulasan')
+
+        # Simpan ulasan ke database
+        db.reviews.insert_one({'nama': nama, 'ulasan': ulasan})
+
+        return jsonify({'result': 'success', 'msg': 'Review added successfully'})
+    except Exception as e:
+        return jsonify({'result': 'fail', 'msg': f'Error adding review: {str(e)}'})
 @app.route('/keranjang')
 def keranjang():
     return render_template('keranjang.html')
